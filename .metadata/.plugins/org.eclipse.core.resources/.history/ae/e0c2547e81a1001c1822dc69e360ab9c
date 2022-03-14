@@ -1,0 +1,25 @@
+package exercicio01;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ex005 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+		
+		int funcionario = sc.nextInt();
+		int horas = sc.nextInt();
+		double valor = sc.nextDouble();
+		
+		double salario = horas * valor ;
+		
+		System.out.println("Numero do Funcionario = " + funcionario);
+		System.out.println("Salario Total = R$ " + salario );		
+		
+		sc.close();
+	}
+
+}
